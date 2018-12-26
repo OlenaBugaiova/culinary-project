@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'home')}">
+
+<head>
+    <title>dish form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+
+    <h1>Create new dish</h1>
+    <form action="#" th:action="@{'/dish/new'}" th:object="${dish}" enctype="multipart/form-data" method="post">
+        <p>Category:
+        <select th:field="*{category}" required>
+            <option th:value="NULL" th:text="' Select category '"></option>
+            <option th:each="c : ${categories}" th:value="${c.categoryName}" th:text="${c.categoryName}">
+            </option>
+        </select></p>
+        <p>Name: <input type="text" th:field="*{name}" required /></p>
+        <p>Image: <input type="file" th:value="*{image}" name="image"/></p>
+        <p>Recipe: <input type="text" th:field="*{recipe}" required /></p>
+        <p>How to serve: <input type="text" th:field="*{howToServe}" /></p>
+        <p>Website: <input type="text" th:field="*{linkToWebsite}" /></p>
+        <p>Comment: <input type="text" th:field="*{comment}" /></p>
+        <p><input type="submit" th:value="'Save'" /> <input type="reset" value="Reset" /></p>
+    </form>
+
+</body>
+
+</html>

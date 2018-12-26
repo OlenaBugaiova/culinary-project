@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'home')}">
+
+<body>
+
+    <h1 th:text="'Add ingredient'"/>
+
+
+    <ul th:each="ingredient : ${dishIngredients}">
+        <li th:text="${ingredient.ingredient.name} + ' ' + ${ingredient.amount} + ' ' + ${ingredient.dimension.name} + '(s)'"></li>
+    </ul>
+
+    <form action="#" th:action="@{'/dish/' + ${dishId} + '/add-ingredient'}" th:object="${ingredientDetails}" method="post">
+        <span>Ingredient:
+            <select th:field="*{ingredient}">
+                <option th:value="NULL" th:text="' Select ingredient '"></option>
+                <option th:each="i : ${ingredients}" th:value="${{i}}" th:text="${i.name}">
+                </option>
+            </select></span>
+        <span>Amount: <input type="text" th:field="*{amount}" /></span>
+        <span>dimension:
+            <select th:field="*{dimension}">
+                <option th:value="NULL" th:text="' Select dimension '"></option>
+                <option th:each="d : ${dimensions}" th:value="${{d}}" th:text="${d.name}">
+                </option>
+            </select></span>
+
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+
+</body>
+
+</html>

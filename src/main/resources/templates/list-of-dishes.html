@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'home')}">
+
+<body>
+
+<h2>Recipes</h2>
+
+<table>
+    <tbody>
+    <tr th:with="viewAll=${T(com.olenabugaiova.tasteit.controller.DishController).VIEW_ALL_DISHES}">
+        <td style="width: 100px;">
+            <a th:href="@{'/dish/showdishes'}" th:text="${viewAll}"
+                th:style="${selectedCategory == viewAll} ? 'color:orange'"/></td>
+        <td th:each="category : ${categories}" style="width: 100px;">
+            <a th:href="@{'/dish/showdishes/{category}'(category=${category.categoryName})}" th:text="${category.categoryName}"
+               th:style="${selectedCategory == category.categoryName} ? 'color:orange'"/></td>
+    </tr>
+    </tbody>
+</table>
+
+
+<tr th:if="${dishes.empty}">
+    <br>
+    <br>
+    <td colspan="2"> No Dishes Available </td>
+</tr>
+
+<tr th:each="dish : ${dishes}">
+    <td><h4><span th:text="${dish.name}"/></h4></td>
+    <td><i><span th:text="${dish.comment}"/></i></td>
+
+    <table><tr>
+    <td>
+        <a th:href="@{'/dish/' + ${dish.id} + '/view/'}">View dish</a></td>
+    <td>
+        <form action="#" th:action="@{'/dish/{id}/delete'(id=${dish.id})}" th:object="${dish}" th:method="delete" >
+            <input type="hidden" name="_method" value="delete" />
+            <button type="submit" id="submitButton">Delete</button></form></td>
+    </tr></table>
+    <hr>
+</tr>
+</tbody>
+
+</body>
+
+</html>

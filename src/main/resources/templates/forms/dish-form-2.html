@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'home')}">
+
+<head>
+    <title>dish form</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+
+    <h1 th:text="'The ' + ${dish.name} + ' dish was created successfully'" />
+    <p>Please add ingredients</p>
+    <a th:href="@{'/dish/' + ${dish.id} + '/add-ingredient'}">Add ingredients</a>
+    <br>
+    <p th:style="${image == ''} ? 'display:none' : 'display:block'">
+        <img th:src="@{'data:image/jpeg;base64,'+${image}}" />
+    </p>
+    <p th:text="'Name: ' + ${dish.name}" th:style="${dish.name == ''} ? 'display:none' : 'display:block'"/>
+    <p th:text="'Recipe: ' + ${dish.recipe}" th:style="${dish.recipe == ''} ? 'display:none' : 'display:block'"/>
+    <p th:text="'How to serve: ' + ${dish.howToServe}" th:style="${dish.howToServe == ''} ? 'display:none' : 'display:block'"/>
+    <p th:text="'Link to website: ' + ${dish.linkToWebsite}" th:style="${dish.linkToWebsite == ''} ? 'display:none' : 'display:block'"/>
+
+
+    <br>
+    <a th:href="@{'/dish/' + ${dish.id} + '/update'}">Update dish</a>
+    <a th:href="'/dish/new'">Add another dish</a>
+
+</body>
+
+</html>
