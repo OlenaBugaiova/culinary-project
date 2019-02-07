@@ -9,22 +9,56 @@
 
 <body>
 
-    <h1>Create new dish</h1>
+<div class="container">
+
+    <h1 class=".card-header" style="color: coral">Create new dish</h1>
     <form action="#" th:action="@{'/dish/new'}" th:object="${dish}" enctype="multipart/form-data" method="post">
-        <p>Category:
-        <select th:field="*{category}" required>
-            <option th:value="NULL" th:text="' Select category '"></option>
-            <option th:each="c : ${categories}" th:value="${c.categoryName}" th:text="${c.categoryName}">
-            </option>
-        </select></p>
-        <p>Name: <input type="text" th:field="*{name}" required /></p>
-        <p>Image: <input type="file" th:value="*{image}" name="image"/></p>
-        <p>Recipe: <input type="text" th:field="*{recipe}" required /></p>
-        <p>How to serve: <input type="text" th:field="*{howToServe}" /></p>
-        <p>Website: <input type="text" th:field="*{linkToWebsite}" /></p>
-        <p>Comment: <input type="text" th:field="*{comment}" /></p>
-        <p><input type="submit" th:value="'Save'" /> <input type="reset" value="Reset" /></p>
+        <table class="table table-bordered table-striped" style="background-color: #f3d3b1; color: white">
+            <tbody>
+                <tr>
+                    <td>Category:</td>
+                    <td><select th:field="*{category}" required>
+                        <option th:value="NULL" th:text="' Select category '"></option>
+                        <option th:each="c : ${categories}" th:value="${c.categoryName}" th:text="${c.categoryName}">
+                        </option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Name: </td>
+                    <td><input type="text" th:field="*{name}" required /></td>
+                </tr>
+                <tr>
+                    <td>Image: </td>
+                    <td><input type="file" th:value="*{image}" name="image"/></td>
+                </tr>
+                <tr>
+                    <td>Recipe: </td>
+                    <td><input type="text" th:field="*{recipe}" required /></td>
+                </tr>
+                <tr>
+                    <td>How to serve: </td>
+                    <td><input type="text" th:field="*{howToServe}" /></td>
+                </tr>
+                <tr>
+                    <td>Time to cook: </td>
+                    <td><input type="text" th:field="*{timeToCookInMinutes}" /></td>
+                </tr>
+                <tr>
+                    <td>Website: </td>
+                    <td><input type="text" th:field="*{linkToWebsite}" /></td>
+                </tr>
+                <tr>
+                    <td>Comment: </td>
+                    <td><input type="text" th:field="*{comment}" /></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" th:value="'Save'" /></td>
+                    <td><input type="reset" value="Reset" /></td>
+                </tr>
+            </tbody>
+        </table>
     </form>
+</div>
 
 </body>
 

@@ -35,6 +35,9 @@ public class Dish implements Serializable {
     @Column(name="how_to_serve")
     private String howToServe;
 
+    @Column(name="time_to_cook")
+    private int timeToCookInMinutes;
+
     @NotNull
     @Column(name="recipe",
             nullable = false)
@@ -139,5 +142,29 @@ public class Dish implements Serializable {
 
     public void setCategory(DishCategory category) {
         this.category = category;
+    }
+
+    public int getTimeToCookInMinutes() {
+        return timeToCookInMinutes;
+    }
+
+    public void setTimeToCookInMinutes(int timeToCookInMinutes) {
+        this.timeToCookInMinutes = timeToCookInMinutes;
+    }
+
+    @Override
+    public String toString() {
+        return "Dish{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", image=" + Arrays.toString(image) +
+                ", howToServe='" + howToServe + '\'' +
+                ", recipe='" + recipe + '\'' +
+                ", timeToCookInMinutes='" + timeToCookInMinutes + '\'' +
+                ", linkToWebsite='" + linkToWebsite + '\'' +
+                ", comment='" + comment + '\'' +
+                ", ingredients=" + ingredients.size() +
+                ", category=" + category +
+                '}';
     }
 }

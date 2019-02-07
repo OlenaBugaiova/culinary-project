@@ -83,7 +83,7 @@ public class DishController {
         model.addAttribute("dishes", dishService.getDishesByCategory(dishCategory));
         model.addAttribute("categories", categoryService.getAllCategories());
         model.addAttribute("selectedCategory", category);
-        return "list-of-dishes";
+        return "view/list-of-dishes";
     }
 
 
@@ -92,7 +92,7 @@ public class DishController {
         model.addAttribute("dishes", dishService.getDishes());
         model.addAttribute("categories", categoryService.getAllCategories());
         model.addAttribute("selectedCategory", VIEW_ALL_DISHES);
-        return "list-of-dishes";
+        return "view/list-of-dishes";
     }
 
     @DeleteMapping("{id}/delete")
@@ -109,6 +109,7 @@ public class DishController {
     private Dish convertToEntity(DishDto dishDto) throws ParseException, IOException {
         Dish dish = modelMapper.map(dishDto, Dish.class);
         dish.setImage(dishDto.getImage().getBytes());
+        dish.setTimeToCookInMinutes(Integer.parseInt(dishDto.getTimeToCookInMinutes()));
         return dish;
     }
 

@@ -28,6 +28,8 @@ public class DishDto implements Serializable {
 
     private String linkToWebsite;
 
+    private String timeToCookInMinutes;
+
     private String comment;
 
     private List<DishIngredientDetails> ingredients;
@@ -110,5 +112,13 @@ public class DishDto implements Serializable {
 
     public void setCategory(String category) {
         this.category = category;
+    }
+
+    public String getTimeToCookInMinutes() {
+        return timeToCookInMinutes;
+    }
+
+    public void setTimeToCookInMinutes(String timeToCookInMinutes) {
+        this.timeToCookInMinutes = timeToCookInMinutes;
     }
 }

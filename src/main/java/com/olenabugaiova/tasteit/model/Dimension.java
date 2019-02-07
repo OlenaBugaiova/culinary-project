@@ -70,4 +70,14 @@ public class Dimension implements Serializable {
     public void setCoefficient(float coefficient) {
         this.coefficient = coefficient;
     }
+
+    @Override
+    public String toString() {
+        return "Dimension{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", isStandard=" + isStandard +
+                ", coefficient=" + coefficient +
+                '}';
+    }
 }

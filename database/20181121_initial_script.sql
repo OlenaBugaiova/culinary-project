@@ -50,6 +50,7 @@ CREATE TABLE `dishes` (
   `recipe` MEDIUMTEXT NOT NULL DEFAULT "",
   `category_id` int(11) NOT NULL,
   `how_to_serve` MEDIUMTEXT default NULL,
+  `time_to_cook` int(11) default NULL,
   `comment` MEDIUMTEXT default NULL,
   `image` MEDIUMBLOB default NULL,
   `link_to_website` MEDIUMTEXT default NULL,

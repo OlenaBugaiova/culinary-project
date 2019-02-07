@@ -94,4 +94,16 @@ public class DishIngredientDetails implements Serializable {
     public void setDish(Dish dish) {
         this.dish = dish;
     }
+
+    @Override
+    public String toString() {
+        return "DishIngredientDetails{" +
+                "id=" + id +
+                ", ingredient=" + ingredient +
+                ", dimension=" + dimension +
+                ", dish=" + dish +
+                ", amount=" + amount +
+                ", comment='" + comment + '\'' +
+                '}';
+    }
 }
