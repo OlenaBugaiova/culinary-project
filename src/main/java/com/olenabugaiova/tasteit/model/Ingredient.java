@@ -23,7 +23,8 @@ public class Ingredient implements Serializable {
     @Column(name="name", unique = true, nullable = false)
     private String name;
 
-    @Column(name="description")
+    @Column(name="description",
+            columnDefinition = "mediumtext")
     private String description;
 
 //    private float calories;  todo

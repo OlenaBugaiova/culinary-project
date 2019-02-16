@@ -38,8 +38,11 @@ public class DishIngredientDetails implements Serializable {
     @JoinColumn(name="dish_id", nullable = false)
     private Dish dish;
 
+    @Column(name="amount")
     private float amount;
 
+    @Column(name="comment",
+            columnDefinition = "mediumtext")
     private String comment;
 
     public DishIngredientDetails() {

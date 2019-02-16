@@ -29,10 +29,12 @@ public class Dish implements Serializable {
             nullable = false)
     private String name;
 
-    @Column(name="image")
+    @Column(name="image",
+            columnDefinition = "mediumblob")
     private byte[] image;
 
-    @Column(name="how_to_serve")
+    @Column(name="how_to_serve",
+            columnDefinition = "mediumtext")
     private String howToServe;
 
     @Column(name="time_to_cook")
@@ -40,13 +42,16 @@ public class Dish implements Serializable {
 
     @NotNull
     @Column(name="recipe",
+            columnDefinition = "mediumtext",
             nullable = false)
     private String recipe;
 
-    @Column(name="link_to_website")
+    @Column(name="link_to_website",
+            columnDefinition = "mediumtext")
     private String linkToWebsite;
 
-    @Column(name="comment")
+    @Column(name="comment",
+            columnDefinition = "mediumtext")
     private String comment;
 
     @OneToMany(mappedBy="dish",
