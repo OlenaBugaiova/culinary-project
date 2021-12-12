@@ -2,7 +2,7 @@
 
 ## Recipe Manager TasteIt
 <b>Description</b> A personal recipe manager with additional functionality: menu planner, culinary event organizer, ingredients list generator for shoping, filter lists for diet & other purposes, dishes recommender. The idea was to organize it as a social network with private/public accounts</br>
-(I started writing the code but haven't completed it)</br>
+(I started writing the code but haven't completed it. The last time I was working on it at the end of 2018)</br>
 <b>Purpose</b> Organize personal recipes, explore new dishes, plan personal and social culinary events in a convinient way</br>
 <b>Inspiration</b> 1. The desire to organize my growing list of recipes 2. Traditions of meeting families and setting the table for the holidays</br> </br>
 <b>How it works</b> Each person creates his/her account and adds dishes into one of three categories: favourite, tasty, want to try. Dishes include information about ingredients, steps, tips, time to cook and can have tabs like "soup", "starter" etc. If a person likes some dish on the internet it can be parced automatically with mentioning the link to the source. Then the person can use services: filters, saved lists of dishes, calendar for menu planning for a period of time, ingredients list generator, event organizer</br>
@@ -30,15 +30,15 @@ Magic of testing homemade food in a new place, seeing decorations, artifacts of 
 <b>Tabs</b> A user profile contains personal dishes divided into three categories: Favoury, Tasty, Want to try</br>
 <b>Tags</b> A user can click on tags to view the related dishes from personal set first and then explore recommendations from other users</br>
 <b>Filters</b> Filters help select a dish that matches your mood, diet, ingredients present in the fridge, time you can spend on cooking etc. You choose your preferences about the dishes and the webpage generates results. You can select to form the results from dishes in your profile or to explore from outside. You can filter by the category, tabs and all the information from the dish form</br>
-<b>Lists</b> You can save your search result into lists. For instance you can add a list of soups, a list for a specific guest or family member, a list for a diet. All lists will be updated automatically when adding a new dishes satisfying specific selected criteria</br>
+<b>Lists</b> You can save your search result into lists. For instance you can add a list of soups, a list for a specific guest or family member, a list for a diet. List can contain only personal recipes. All lists will be updated automatically when adding a new dishes to the personal profile satisfying specific selected search criteria</br>
 ### Menu planning
 <b>Calendar planner</b> People work on weekdays and buy products on weekends often. Calendar planner helps to choose dishes people plan to cook during the following week or other period of time by adding them into their calendar</br>
 <b>Shoping list generator</b> After selecting the dishes for a period of time people can download required ingredients. Then they can untag what they already have or add some additional products. And with this list they can order a products delivery or go to a supermarket.</br>
 ### Social Networking
 <b>Following profiles</b> People can follow profiles that match their culinary interests. It shows updates of new dishes of the selected people</br>
 <b>Making friends</b> People can add friends to share culinary experience</br>
-<b>Organizing social events</b></br>
+<b>Organizing social events</b> Friends can organize common culinary events by selecting dishes together from their profiles, add them to the common virtual table</br>
 ### Dish exploration
-<b>Recomendations</b> </br>
-<b>Feed from people a user is following</b> </br>
+<b>Recomendations</b> Filters will have an explore option to show recommended results from other profiles. If a user likes a dish he/she can add it to the personal profile under the "Want to try" category</br>
+<b>Feed from people a user is following</b> A user can open feed to see updates from friends and people he/she is following</br>
 
