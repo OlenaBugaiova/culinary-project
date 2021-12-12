@@ -22,3 +22,14 @@ Magic of testing homemade food in a new place, seeing decorations, artifacts of 
 <b>How is it different from CouchSurfing?</b> It focuses on eating together. The time of the event is shorter. The format is lighter</br>
 <b>How is it similar to CouchSurfing?</b> The website connects travelers with locals. It has references that can work as credits for request acceptance. Each user fills a profile and can choose among 3 modes: host, traveler, not accepting requests</br>
 <b>Similarity to EatWith</b> After coming to the idea of "Meet & Eat with locals" I searched for similar websites and found the website [EatWith](https://www.eatwith.com/) "Join local hosts near you or abroad for intimate dinner parties, hands-on cooking classes, and interactive workshops". The main difference is that you pay for your culinary experience there
+
+### Functionality of TasteIt
+<b>User Profile</b> A profile where a user can view, add and modify personal dishes. A profile can be private (paid) or public (free). A dish can go into one of three categories: Favourite, Tasty, Want to try (for new dishes). To add a dish a user need to feel the form. Every dish can have multiple tags to help select a list of dishes later
+<b>Dish parsing</b> Also, a dish can be parsed from the webpage on the internet automatically if a user selects this option. It can be done with help of JavaScript as a plagin. To protect the authorship the link to the source webpage will be included to the dish description
+#### Menu planning
+#### Social Networking
+<b>Following profiles</b></br>
+<b>Making friends</b></br>
+<b>Organizing social events</b></br>
+#### Dish exploration
+
