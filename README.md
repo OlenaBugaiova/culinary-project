@@ -24,12 +24,19 @@ Magic of testing homemade food in a new place, seeing decorations, artifacts of 
 <b>Similarity to EatWith</b> After coming to the idea of "Meet & Eat with locals" I searched for similar websites and found the website [EatWith](https://www.eatwith.com/) "Join local hosts near you or abroad for intimate dinner parties, hands-on cooking classes, and interactive workshops". The main difference is that you pay for your culinary experience there
 
 ### Functionality of TasteIt
-<b>User Profile</b> A profile where a user can view, add and modify personal dishes. A profile can be private (paid) or public (free). A dish can go into one of three categories: Favourite, Tasty, Want to try (for new dishes). To add a dish a user need to feel the form. Every dish can have multiple tags to help select a list of dishes later
-<b>Dish parsing</b> Also, a dish can be parsed from the webpage on the internet automatically if a user selects this option. It can be done with help of JavaScript as a plagin. To protect the authorship the link to the source webpage will be included to the dish description
+<b>User Profile</b> A profile where a user can view, add and modify personal dishes. A profile can be private (paid) or public (free). Each user has credentials to login to the website. A dish can go into one of three categories: Favourite, Tasty, Want to try (for new dishes). To add a dish a user need to feel the form. Every dish can have multiple tags to help select a list of dishes later</br>
+<b>Dish parsing</b> Also, a dish can be parsed from the webpage on the internet automatically if a user selects this option. It can be implemented as a JavaScript plagin. The link to the source webpage will be included to the dish description to protect the authorship</br>
+#### Navigation
+<b>Filters</b> </br>
+<b>Lists</b> </br>
 #### Menu planning
+<b>Calendar planner</b> </br>
+<b>Shoping list generator</b> </br>
 #### Social Networking
 <b>Following profiles</b></br>
 <b>Making friends</b></br>
 <b>Organizing social events</b></br>
 #### Dish exploration
+<b>Recomendations</b> </br>
+<b>Feed from people a user is following</b> </br>
 
