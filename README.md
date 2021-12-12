@@ -2,7 +2,7 @@
 
 ### Recipe Manager TasteIt
 <b>Description</b> A personal recipe manager with additional functionality: menu planner, culinary event organizer, ingredients list generator for shoping, filter lists for diet & other purposes, dishes recommender. The idea was to organize it as a social network with private/public accounts</br>
-(I started writing the code but haven't complete it)</br>
+(I started writing the code but haven't completed it)</br>
 <b>Purpose</b> Organize personal recipes, explore new dishes, plan personal and social culinary events in a convinient way</br>
 <b>Inspiration</b> 1. The desire to organize my growing list of recipes 2. Traditions of meeting families and setting the table for the holidays</br> </br>
 <b>How it works</b> Each person creates his/her account and adds dishes into one of three categories: favourite, tasty, want to try. Dishes include information about ingredients, steps, time to cook and can have tabs like "soup", "starter" etc. If a person likes some dish on the internet it can be parced automatically with mentioning the link to the source. Then the person can use services: filters, saved lists of dishes, calendar for menu planning for a period of time, ingredients list generator, event organizer</br>
@@ -22,5 +22,3 @@ Magic of testing homemade food in a new place, seeing decorations, artifacts of 
 <b>How is it different from CouchSurfing?</b> It focuses on eating together. The time of the event is shorter. The format is lighter</br>
 <b>How is it similar to CouchSurfing?</b> The website connects travelers with locals. It has references that can work as credits for request acceptance. Each user fills a profile and can choose among 3 modes: host, traveler, not accepting requests</br>
 <b>Similarity to EatWith</b> After coming to the idea of "Meet & Eat with locals" I searched for similar websites and found the website [EatWith](https://www.eatwith.com/) "Join local hosts near you or abroad for intimate dinner parties, hands-on cooking classes, and interactive workshops". The main difference is that you pay for your culinary experience there
-
-### Functionality of Recipe Manager "Taste it"
