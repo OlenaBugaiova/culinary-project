@@ -21,6 +21,6 @@ Magic of testing homemade food in a new place, seeing decorations, artifacts of 
 <b>Monetization</b> Additional paid features or contextual advertising</br> </br>
 <b>How is it different from CouchSurfing?</b> It focuses on eating together. The time of the event is shorter. The format is lighter</br>
 <b>How is it similar to CouchSurfing?</b> The website connects travelers with locals. It has references that can work as credits for request acceptance. Each user fills a profile and can choose among 3 modes: host, traveler, not accepting requests</br>
-<b>Similarity to EatWith</b> After coming to the idea of "Meet & Eat with locals" I searched for similar websites and found the website EatWith. "Join local hosts near you or abroad for intimate dinner parties, hands-on cooking classes, and interactive workshops." The main difference is that you pay for your culinary experience there
+<b>Similarity to EatWith</b> After coming to the idea of "Meet & Eat with locals" I searched for similar websites and found the website [EatWith](https://www.eatwith.com/) "Join local hosts near you or abroad for intimate dinner parties, hands-on cooking classes, and interactive workshops". The main difference is that you pay for your culinary experience there
 
 ### Functionality of Recipe Manager "Taste it"
