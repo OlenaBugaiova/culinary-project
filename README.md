@@ -1,8 +1,8 @@
 # Culinary Project
 
 ## Recipe Manager TasteIt
+I started writing the code but haven't completed it. The last time I was working on it at the end of 2018</br>
 <b>Description</b> A personal recipe manager with additional functionality: menu planner, culinary event organizer, ingredients list generator for shoping, filter lists for diet & other purposes, dishes recommender. The idea was to organize it as a social network with private/public accounts</br>
-(I started writing the code but haven't completed it. The last time I was working on it at the end of 2018)</br>
 <b>Purpose</b> Organize personal recipes, explore new dishes, plan personal and social culinary events in a convinient way</br>
 <b>Inspiration</b> 1. The desire to organize my growing list of recipes 2. Traditions of meeting families and setting the table for the holidays</br> </br>
 <b>How it works</b> Each person creates his/her account and adds dishes into one of three categories: favourite, tasty, want to try. Dishes include information about ingredients, steps, tips, time to cook and can have tabs like "soup", "starter" etc. If a person likes some dish on the internet it can be parced automatically with mentioning the link to the source. Then the person can use services: filters, saved lists of dishes, calendar for menu planning for a period of time, ingredients list generator, event organizer</br>
