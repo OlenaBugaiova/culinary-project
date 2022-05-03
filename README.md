@@ -8,6 +8,7 @@ I started writing the code but haven't completed it. The last time I was working
 <b>How it works</b> Each person creates his/her account and adds dishes into one of three categories: favourite, tasty, want to try. Dishes include information about ingredients, steps, tips, time to cook and can have tabs like "soup", "starter" etc. If a person likes some dish on the internet it can be parced automatically with mentioning the link to the source. Then the person can use services: filters, saved lists of dishes, calendar for menu planning for a period of time, ingredients list generator, event organizer</br>
 <b>The target audience</b> Everyone who cooks at home. Additional features are for people who likes to explore new dishes, to have social dining</br> 
 <b>Monetization</b> Paid features, private accounts, or contextual advertising</br> </br>
+<b>[More about functionality](#functionality-of-tasteit)</b>
 
 
 ## Meet & Eat with locals
